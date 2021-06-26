@@ -1,0 +1,26 @@
+{
+  "name": "note-taker-fran",
+  "version": "1.0.0",
+  "description": "This is an application that can be used to write and save notes using Express.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "Jest"
+  },
+  "author": "PanchoPuma",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PanchoPuma/note-taker-express.git"
+  },
+  "keywords": [
+    "note",
+    "taker"
+  ],
+  "bugs": {
+    "url": "https://github.com/PanchoPuma/note-taker-express/issues"
+  },
+  "homepage": "https://github.com/PanchoPuma/note-taker-express#readme"
+}

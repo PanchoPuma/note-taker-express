@@ -1,1 +1,1 @@
-# Note Taker Starter Code# note-taker-express
+# Note Taker Starter Code
