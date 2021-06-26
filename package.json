@@ -10,7 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "inquirer": "^8.1.1"
+    "inquirer": "^8.1.1",
+    "routes": "^2.1.0"
   },
   "repository": {
     "type": "git",
