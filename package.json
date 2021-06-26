@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/PanchoPuma/note-taker-express/issues"
   },
-  "homepage": "https://github.com/PanchoPuma/note-taker-express#readme"
+  "homepage": "https://github.com/PanchoPuma/note-taker-express#readme",
+  "devDependencies": {
+    "jest": "^27.0.5"
+  }
 }
