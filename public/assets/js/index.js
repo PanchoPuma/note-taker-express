@@ -182,4 +182,23 @@ if (window.location.pathname === '/notes') {
 
 getAndRenderNotes();
 
-module.exports = router;
+//create a new note 
+
+function createNote(body, notesListArray) {
+  const note = body;
+  notesListArray.push(note);
+
+  fs.writeFileSync(
+      path.join(__dirname, '../../../db/db.json'),
+      JSON.stringify({
+          notes: notesArray
+      }, null, 2)
+  )
+
+  return note;
+}
+
+module.exports = {
+  router,
+  createNote
+};
