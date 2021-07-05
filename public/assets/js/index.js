@@ -191,8 +191,8 @@ function createNote(body, notesListArray) {
   fs.writeFileSync(
       path.join(__dirname, '../../../db/db.json'),
       JSON.stringify({
-          notes: notesArray
-      }, null, 2)
+          notes:notesListArray
+        }, null, 2)
   )
 
   return note;
