@@ -6,7 +6,7 @@ const path = require("path");
 
 
 //Delete an existing note
-function deleteNote(notesArray, id) {
+function deleteNote(id, notesArray) {
     let dNID = parseInt(id);
     notesArray.splice(dNID, 1);
 
@@ -24,7 +24,7 @@ function deleteNote(notesArray, id) {
 
 
 //Create a new Note
-function newNote(notesArray, body) {
+function newNote(body, notesArray) {
     let note = body;
     if (!Array.isArray(notesArray))
     notesArray = [];

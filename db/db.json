@@ -1,1 +1,12 @@
-[]
+{
+    "notes": [
+      {
+        "title": "This is a new Test",
+        "text": "New Test"
+      },
+      {
+        "title": "This new test",
+        "text": "New prueba"
+      }
+    ]
+  }

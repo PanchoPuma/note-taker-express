@@ -7,7 +7,7 @@ const {notes} = require('../../db/db.json');
 
 
 router.delete('/notes/:id', (req, res) => {
-    deleteNote(notes, req.params.id);
+    deleteNote(req.params.id, notes);
     res.json(notes);
 })
 
@@ -19,7 +19,7 @@ router.get('/notes', (req, res) => {
 
 
 router.post('/notes', (req, res) => {
-    let note = newNote(notes, req.body);
+    let note = newNote(req.body, notes);
     res.json(note);
 })
 
