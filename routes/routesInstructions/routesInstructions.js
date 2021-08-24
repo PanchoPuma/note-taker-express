@@ -13,7 +13,7 @@ function deleteNote(id, notesArray) {
         if (nota.id == id) {
             notesArray.splice(i, 1);
             fs.writeFileSync(
-                path.join(__dirname, './db/db.json'),
+                path.join(__dirname, '../../db/db.json'),
                 JSON.stringify(notesArray, null, 2)
             );
         }
@@ -27,7 +27,7 @@ function newNote(body, notesArray) {
     notesArray.push(note);
 
     fs.writeFileSync(
-        path.join(__dirname, '../db/db.json'),
+        path.join(__dirname, '../../db/db.json'),
         JSON.stringify({ notes: notesArray }, null, 2)
     )
 
