@@ -19,7 +19,7 @@ router.get('/notes', (req, res) => {
 
 
 router.post('/notes', (req, res) => {
-    let note = newNote(req.body, notes);
+    let note = newNote(notes, req.body);
     res.json(note);
 })
 
