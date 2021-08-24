@@ -20,8 +20,8 @@ router.get('/notes', (req, res) => {
 
 router.post('/notes', (req, res) => {
     req.body.id = notes.length.toString();
-    let nuevaNota = newNote(req.body, notes);
-    res.json(nuevaNota);
+    let note = newNote(req.body, notes);
+    res.json(note);
 })
 
 
