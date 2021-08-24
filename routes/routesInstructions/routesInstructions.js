@@ -6,16 +6,17 @@ const path = require("path");
 
 
 //Delete an existing note
-function deleteNote(id, notesArray) {
+function deleteNote(notesArray, id) {
     for (let i = 0; i < notesArray.length; i++) {
-        let nota = notesArray[i];
+        let note = notesArray[i];
 
-        if (nota.id == id) {
+        if (note.id == id) {
             notesArray.splice(i, 1);
             fs.writeFileSync(
                 path.join(__dirname, '../../db/db.json'),
                 JSON.stringify(notesArray, null, 2)
             );
+
         }
     }
 }
@@ -24,6 +25,9 @@ function deleteNote(id, notesArray) {
 //Create a new Note
 function newNote(body, notesArray) {
     let note = body;
+    if (!Array.isArray(notesArray))
+    notesArray = [];
+
     notesArray.push(note);
 
     fs.writeFileSync(
@@ -36,4 +40,4 @@ function newNote(body, notesArray) {
 
 
 
-module.exports = router, newNote, deleteNote;
+module.exports = { newNote, deleteNote };
