@@ -36,4 +36,4 @@ function newNote(body, notesArray) {
 
 
 
-module.exports = newNote, deleteNote;
+module.exports = router, newNote, deleteNote;
